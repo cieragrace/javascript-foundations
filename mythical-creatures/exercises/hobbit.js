@@ -1,26 +1,34 @@
 
 class Hobbit {
-  constructor(name) {
-    this.name = name;
+  constructor(hobbit) {
+    this.name = hobbit.name;
     this.age = 0;
     this.adult = false;
     this.old = false;
     this.hasRing = false;
 }
-celebrateBirthday() {
+celebrateBirthday(age) {
   this.age += 1
   if (this.age > 32) {
     this.adult = true
-  } else if (this.age >= 101) {
+  }
+  if (this.age > 100) {
     this.old = true
   }
 }
 getRing() {
-  if (name === 'Frodo') {
-    this.hasRing = true;
+  if (this.name === "Frodo") {
+  this.hasRing = true
+  return "Here is the ring!"
+  } else {
+  this.hasRing = false
+  return "You can't have it!"
   }
- }
 }
+}
+
+ //var newHobbit1 = new Hobbit("bilbo")
+//console.log(newHobbit1)
 
 
 
