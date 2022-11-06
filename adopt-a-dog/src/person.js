@@ -22,7 +22,7 @@ fillFoodBowl() {
     var rocky = new Dog({name: dogName, age: dogAge })
     this.dog = rocky
   } else {
-    return "You can't adopt Chloe. You already have Cap!";
+    return "You can't adopt ${dogName}. You already have ${this.dog.name}!";
   }
     // return "you can't adopt Chloe. You already have Cap!";
     //make instance of dog then reassign this.dog to that instance
